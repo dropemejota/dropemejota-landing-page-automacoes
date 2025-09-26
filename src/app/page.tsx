@@ -1,19 +1,5 @@
-import { Header } from "@/ui/landing/Header";
-import { Hero } from "@/ui/landing/Hero";
-import { Benefits } from "@/ui/landing/Benefits";
-import { Tools } from "@/ui/landing/Tools";
-import { Cta } from "@/ui/landing/Cta";
-import { Footer } from "@/ui/landing/Footer";
+import { redirect } from "next/navigation";
 
-export default function Home() {
-  return (
-    <>
-      <Header />
-      <Hero />
-      <Benefits />
-      <Tools />
-      <Cta />
-      <Footer />
-    </>
-  );
+export default function RootPage() {
+  redirect("/home");
 }
